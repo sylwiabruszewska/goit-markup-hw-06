@@ -486,6 +486,34 @@
         <button class="modal-close" type="button" data-modal-close>
           &#10006;
         </button>
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <form class="modal-content" name="order-form">
+            <label for="client-name">Imię</label>
+            <input id="client-name" type="text" />
+            <label for="client-phone-number">Telefon</label>
+            <input id="client-phone-number" type="tel" />
+            <label for="client-email">E-mail</label>
+            <input id="client-email" type="email" />
+            <label for="client-comment">Komentarz</label>
+            <textarea
+              id="client-comment"
+              type="text"
+              rows="8"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+            <label class="checkbox"
+              ><input
+                type="checkbox"
+                name="terms-of-use"
+                value="check"
+              />Oświadczam iż akceptuję
+              <a href="#">Regulamin</a>
+              i
+              <a href="#">Politykę Prywatności.</a></label
+            >
+            <button class="button-order" type="submit">Wyślij</button>
+          </form>
+        </div>
       </div>
     </div>
 
