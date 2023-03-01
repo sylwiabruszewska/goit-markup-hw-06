@@ -604,6 +604,11 @@ h1 {
 }
 
 /* NEWSLETTER FORM */
+.footer-newsletter form {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 .footer-newsletter input {
   height: 50px;
   width: 358px;
@@ -614,32 +619,54 @@ h1 {
   padding: 15px 16px;
   margin-right: 12px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-newsletter input:focus {
+.footer-newsletter input:focus,
+.footer-newsletter input:hover {
   border-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-newsletter button {
   width: 200px;
   height: 50px;
-  background: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #fff;
+  border: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  outline: none;
+  color: var(--text-color);
+  background: var(--color-light-gray);
 
-  /* display: flex;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
   align-items: center;
-  text-align: center; */
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.button-newsletter:hover,
+.button-newsletter:active {
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
 }
 
 .newsletter-icon {
-  fill: #000;
+  fill: var(--text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-newsletter:hover .newsletter-icon,
+.button-newsletter:active .newsletter-icon {
+  fill: #fff;
 }
 
 /* MODAL */
