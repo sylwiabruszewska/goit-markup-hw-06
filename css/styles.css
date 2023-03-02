@@ -735,7 +735,7 @@ h1 {
 
 /* ORDER FORM */
 
-.modal p {
+.form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -744,7 +744,20 @@ h1 {
   margin-bottom: 12px;
 }
 
-.modal-content > label {
+.input-container {
+  position: relative;
+}
+
+.icon-form {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  transform: translatey(60%);
+  fill: var(--text-color);
+}
+
+.input-container label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -753,29 +766,44 @@ h1 {
   color: var(--font-color-light-gray);
 }
 
-.modal-content > input,
-.modal-content textarea {
+.input-container input,
+.form-container textarea {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-size: 12px;
 }
 
-.modal-content > input {
+.input-container input {
   margin-bottom: 10px;
   height: 40px;
+  padding: 12px 12px 12px 42px;
 }
 
-.modal-content textarea {
+.form-container textarea {
   resize: none;
   margin-bottom: 20px;
+  padding: 12px 16px;
 }
 
-.modal-content textarea::placeholder {
-  padding: 12px 16px;
-  font-size: 12px;
+.form-container textarea::placeholder {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.input-container input:hover,
+.input-container input:active,
+.form-container textarea:hover,
+.form-container textarea:active {
+  border-color: var(--brand-color);
+  outline: none;
+  border: 1px solid var(--brand-color);
+}
+
+.input-container input:focus + .icon-form,
+.input-container input:hover + .icon-form {
+  fill: var(--brand-color);
 }
 
 label.checkbox {
@@ -801,26 +829,3 @@ label.checkbox input {
   height: 15px;
   margin-right: 8px;
 }
-
-/* .button-order {
-  border-radius: 4px;
-  border: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--text-color);
-  background: var(--color-light-gray);
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-order:hover,
-.button-order:active {
-  background: var(--brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  cursor: pointer;
-} */
