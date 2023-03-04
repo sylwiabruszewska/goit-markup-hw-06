@@ -664,6 +664,11 @@ h1 {
   justify-content: space-evenly;
 }
 
+.button-order {
+  display: block;
+  margin: auto;
+}
+
 .button-newsletter:hover,
 .button-newsletter:active,
 .button-order:hover,
@@ -758,7 +763,7 @@ h1 {
   fill: var(--text-color);
 }
 
-.input-container label {
+.form-container label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -832,13 +837,10 @@ label.checkbox a:hover {
   margin-bottom: 30px;
 }
 
-.form-input {
-  /* position: absolute;
-  top: 20%; */
+.custom-input {
   width: 16px;
   height: 15px;
   margin: auto;
-  /* display: none; */
 }
 
 .icon-checkbox {
