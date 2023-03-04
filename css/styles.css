@@ -669,9 +669,9 @@ h1 {
 }
 
 .button-newsletter:hover,
-.button-newsletter:active,
+.button-newsletter:focus,
 .button-order:hover,
-.button-order:active {
+.button-order:focus {
   background-color: #1976d2;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -800,9 +800,9 @@ h1 {
 }
 
 .input-container input:hover,
-.input-container input:active,
+.input-container input:focus,
 .form-container textarea:hover,
-.form-container textarea:active {
+.form-container textarea:focus {
   border-color: var(--brand-color);
   outline: none;
   border: 1px solid var(--brand-color);
